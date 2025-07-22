@@ -336,16 +336,6 @@ def main():
             sys.exit(0)
         else:
             print(LANGUAGES[LANG]["invalid"])
-
-
-# Vorschläge für weitere Funktionen:
-# - Automatische Sicherung des Cache-Ordners vor dem Löschen
-# - Anzeige des belegten Speicherplatzes der Cache-Ordner
-# - Option, nur bestimmte Cache-Typen zu löschen (z.B. nur server-cache)
-# - Protokollierung der Löschvorgänge in einer Logdatei
-# - Mehrsprachige Benutzeroberfläche (Deutsch/Englisch)
-# - Option, das FiveM-Programm nach dem Löschen automatisch zu starten
-
-
+            
 if __name__ == "__main__":
     main()
