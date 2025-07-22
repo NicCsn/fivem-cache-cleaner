@@ -1,116 +1,96 @@
 # FiveM Cache Cleaner
 
-Ein vielseitiges Python-Tool zum Löschen und Sichern des FiveM-Caches unter Windows (und eingeschränkt macOS/Linux). Das Tool bietet ein interaktives Konsolenmenü mit vielen Optionen.
+A versatile Python tool for deleting and backing up the FiveM cache on Windows (and limited support for macOS/Linux). The tool provides an interactive console menu with many options.
 
-## Voraussetzungen
+## Requirements
 
-- Python 3.8 oder neuer
-- Windows empfohlen (macOS/Linux eingeschränkt)
+- Python 3.8 or newer
+- Windows recommended (macOS/Linux limited support)
 
 ## Installation & Start
 
-1. Lade die Datei `fivem_cache_cleaner.py` herunter.
-2. Öffne ein Terminal im Download-Ordner.
-3. Starte das Tool mit:
+1. Download the file `fivem_cache_cleaner.py`.
+2. Open a terminal in the download folder.
+3. Start the tool with:
 
    ```
    python fivem_cache_cleaner.py
    ```
 
-## Menü-Optionen & Hinweise
+## Menu Options & Notes
 
-**[1] FiveM Cache löschen (mit Sicherung)**
+**[1] Delete FiveM cache (with backup)**
 
-- Löscht alle relevanten Cache-Ordner.
-- Vor dem Löschen wirst du gefragt, ob ein Backup erstellt werden soll.
-- Tipp: Aktiviere Logging mit Taste `L`, um alle Aktionen zu protokollieren.
+- Deletes all relevant cache folders.
+- You will be asked if you want to create a backup before deletion.
+- Tip: Activate logging with key `L` to log all actions.
 
-**[2] FiveM Cache sichern (Backup in Downloads)**
+**[2] Backup FiveM cache (backup in Downloads)**
 
-- Erstellt ein Backup aller Cache-Ordner im Ordner `Downloads/FiveM_Cache_Backup`.
+- Creates a backup of all cache folders in the `Downloads/FiveM_Cache_Backup` folder.
 
-**[3] Speicherplatz der Cache-Ordner anzeigen**
+**[3] Show cache folder size**
 
-- Zeigt die Größe aller relevanten Cache-Ordner an.
+- Shows the size of all relevant cache folders.
 
-**[4] Nur bestimmten Cache-Ordner löschen**
+**[4] Delete only a specific cache folder**
 
-- Wähle gezielt einen der drei Cache-Ordner aus.
-- Auch hier kannst du vorab ein Backup machen.
+- Select one of the three cache folders to delete.
+- You can also create a backup beforehand here.
 
-**[5] Letzte Aktionen anzeigen**
+**[5] Show last actions**
 
-- Zeigt an, wann zuletzt gelöscht oder gesichert wurde.
+- Shows when cache or backup was last deleted or created.
 
-**[6] Cache- oder Backup-Ordner öffnen**
+**[6] Open cache or backup folder**
 
-- Öffnet den jeweiligen Ordner im Explorer/Finder.
+- Opens the respective folder in Explorer/Finder.
 
-**[7] Logdatei anzeigen oder löschen**
+**[7] Show or delete log file**
 
-- Zeigt die Logdatei an oder löscht sie (nur wenn Logging aktiviert war).
+- Shows or deletes the log file (only if logging was enabled).
 
-**[8] Pfade konfigurieren**
+**[8] Configure paths**
 
-- Passe die Pfade der Cache-Ordner an (z.B. bei abweichender Installation).
+- Adjust the paths of the cache folders (e.g. for custom installations).
 
-**[9] Sprache wechseln (Deutsch/Englisch)**
+**[9] Switch language (German/English)**
 
-- Schaltet das gesamte Menü und alle Texte um.
+- Switches the entire menu and all texts.
 
-**[L] Logging aktivieren/deaktivieren**
+**[L] Enable/disable logging**
 
-- Schaltet die Protokollierung aller Aktionen ein/aus.
+- Turns logging of all actions on/off.
 
-**[0] Beenden**
+**[0] Exit**
 
-- Beendet das Programm.
+- Exits the program.
 
-## Hinweise
+## Notes
 
-- Für manche Aktionen sind Administratorrechte nötig (z.B. Löschen von Systemordnern).
-- Das Tool funktioniert am besten unter Windows.
-- Die Logdatei und Backups werden im Downloads-Ordner des aktuellen Benutzers gespeichert.
+- Some actions may require administrator rights (e.g. deleting system folders).
+- The tool works best on Windows.
+- The log file and backups are saved in the current user's Downloads folder.
 
-## .exe erstellen (optional)
+## Create .exe (optional)
 
-1. Installiere PyInstaller:
+1. Install PyInstaller:
    ```
    pip install pyinstaller
    ```
-2. Erstelle die .exe:
+2. Create the .exe:
    ```
    pyinstaller --onefile fivem_cache_cleaner.py
    ```
-3. Die ausführbare Datei findest du im `dist`-Ordner.
+3. The executable file can be found in the `dist` folder.
 
-## GitHub-Nutzung
+## GitHub Usage
 
-- Lade das Skript und ggf. die .exe in ein GitHub-Repository hoch.
-- Füge diese README.md hinzu.
-- Nutzer können das Tool direkt herunterladen und nutzen.
+- Upload the script and optionally the .exe to a GitHub repository.
+- Add this README.md.
+- Users can download and use the tool directly.
 
 ---
 
-**Fragen oder Probleme?**
-Erstelle ein Issue im GitHub-Repository oder kontaktiere den Entwickler.
-
-# FiveM Cache Cleaner
-
-Dieses Python-Skript bietet ein Konsolenmenü, um den FiveM-Cache unter Windows zu löschen. Es zeigt beim Start einen Slogan und eine Beschreibung an. Nach Auswahl von "1" werden die relevanten Cache-Ordner im %LOCALAPPDATA%-Verzeichnis gelöscht.
-
-## Nutzung
-
-1. Stelle sicher, dass Python installiert ist.
-2. Starte das Skript mit:
-
-   ```
-   python fivem_cache_cleaner.py
-   ```
-
-3. Folge den Anweisungen im Konsolenmenü.
-
-## Hinweis
-
-- Das Skript funktioniert nur unter Windows, da es auf das %LOCALAPPDATA%-Verzeichnis zugreift.
-- Das Skript benötigt ggf. Administratorrechte, um alle Dateien löschen zu können.
+**Questions or problems?**
+Create an issue in the GitHub repository or contact the developer.
